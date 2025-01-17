@@ -72,7 +72,7 @@ exports.forgotPassword = async (req, res) => {
 
   const resetURL = `${req.protocol}://${req.get(
     "host"
-  )}/api/auth/reset-Password/${resetToken}`;
+  )}/reset-password.html?token=${resetToken}`;
   const message = `Forgot your password? Submit with your new password to: 
   ${resetURL}.\nIf you didn't forget your password, please ignore this email!`;
 
